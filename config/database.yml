@@ -1,15 +1,16 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: canvas_dev
   pool: 5
   username: basedgod
-  password:
+  password: 
   min_messages: WARNING
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: canvas_test
   pool: 5
   username: basedgod
+  password: 
