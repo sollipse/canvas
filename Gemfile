@@ -52,5 +52,6 @@ end
 
 # Simple Heroku production Gem
 
+gem 'koala'
 gem 'rails_12factor', group: :production
 ruby '2.1.1'
