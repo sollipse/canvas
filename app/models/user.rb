@@ -14,10 +14,6 @@ class User < ActiveRecord::Base
     block_given? ? yield(@facebook) : @facebook
   rescue Koala::Facebook::APIError => e
     logger.info e.to_s
-    nil # or consider a custom null object
-  end
-
-  def friends_count
-    facebook { |fb| fb.get_connection("me", "friends").size }
+    nil 
   end
 end
